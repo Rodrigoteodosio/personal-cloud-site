@@ -76,6 +76,52 @@ li {
   margin-bottom: 0.5rem;
 }
 
+#topo {
+  text-align: center;
+}
+
+#topo h1 {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#topo div {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#topo a {
+  color: #111;
+  text-decoration: none;
+  font-size: 1rem;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+#topo a:hover {
+  border-bottom-color: #111;
+}
+
+@media (max-width: 768px) {
+  #topo {
+    text-align: left;
+  }
+
+  #topo h1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #topo div {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
 footer {
   padding: 3rem 0;
   text-align: center;
