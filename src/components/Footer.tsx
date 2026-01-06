@@ -1,8 +1,10 @@
 function Footer() {
   return (
-    <section>
-      <h2>Footer</h2>
-    </section>
+    <footer>
+      <p>Privacidade por design.</p>
+      <p>Dados sob seu controle.</p>
+      <p>© Personal Cloud</p>
+    </footer>
   )
 }
 
