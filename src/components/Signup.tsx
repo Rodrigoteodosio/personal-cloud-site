@@ -1,4 +1,8 @@
+import { useState } from 'react'
+
 function Signup() {
+  const [showMessage, setShowMessage] = useState(false)
+
   return (
     <section>
       <h1>Criar conta</h1>
@@ -13,7 +17,8 @@ function Signup() {
         placeholder="Sua senha"
         style={{ width: '100%', padding: '12px 16px', marginBottom: '16px' }}
       />
-      <button>Criar conta</button>
+      <button onClick={() => setShowMessage(true)}>Criar conta</button>
+      {showMessage && <p>Cadastro iniciado. Em breve você continuará.</p>}
     </section>
   )
 }
