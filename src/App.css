@@ -20,6 +20,11 @@ body {
 
 section {
   padding: 4rem 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+section:first-of-type {
+  border-top: none;
 }
 
 header, section:first-of-type {
@@ -71,9 +76,43 @@ p {
   margin-bottom: 1rem;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 li {
   font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+section > div > div {
+  display: grid;
+  gap: 3rem;
+}
+
+section > ul > li {
+  margin-bottom: 2rem;
+}
+
+section > ul > li h3 {
   margin-bottom: 0.5rem;
+}
+
+section > ul > li p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 769px) {
+  section > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
 }
 
 #topo {
